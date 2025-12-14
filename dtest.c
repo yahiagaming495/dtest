@@ -25,7 +25,8 @@ int main (int argc, char *argv[]) {
 
 
 	if (pzero == NULL || prand == NULL || pout == NULL || poutrand == NULL) {
-		perror("Error while opening files: ");
+		perror("Error while opening files");
+		return 1;
 	}
 
     
